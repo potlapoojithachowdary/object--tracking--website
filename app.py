@@ -48,7 +48,7 @@ def track():
     output_name = str(uuid.uuid4()) + ".mp4"
     output_path = os.path.join(OUTPUT_FOLDER, output_name)
 
-    fourcc = cv2.VideoWriter_fourcc(*"mp4v")
+    fourcc = cv2.VideoWriter_fourcc(*"avc1")
     out = cv2.VideoWriter(
         output_path,
         fourcc,
